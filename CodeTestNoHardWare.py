@@ -8,7 +8,7 @@ input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
 
 # Example input data
-#number 6
+# Example Number 6
 x = np.array([[600,264,610,209,587,148,566,105,561,70,512,153,463,126,429,114,398,103,493,186,469,175,511,196,544,210,481,220,454,211,495,226,528,235,473,252,426,236,400,225,375,211]], dtype=np.float32)
 
 # Chuẩn bị dữ liệu đầu vào cho mô hình TensorFlow Lite
