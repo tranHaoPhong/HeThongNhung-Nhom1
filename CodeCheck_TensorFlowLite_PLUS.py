@@ -76,12 +76,12 @@ while True:
         post_response = requests.post(post_url, json=post_data)
 
         # In ra phản hồi từ ESP32-CAM
-        print(post_response.text)
-    # Đọc ảnh nền
-    imageNEN = cv2.imread('Logo_PTIT_University.png')
+        #print(post_response.text)
+    # Tạo ảnh nền
+    imageNEN = cv2.imread('Logo_PTIT_University.jpg')
     cv2.imshow("Image", imageNEN)
 
-    # cv2.imshow("Image", img)
+    #cv2.imshow("Image", img)
     
     key = cv2.waitKey(1)
     if key == 27: # ASCII code for Esc key
