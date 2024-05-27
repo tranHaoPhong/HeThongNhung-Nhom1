@@ -33,8 +33,8 @@ while True:
 
     if landmarks_data:  # Check if the pressed key is a number and landmarks_data is not empty
         with open('hand_landmarks_DATA.csv', 'a', newline='') as file:  # Open the CSV file in append mode
-            file.write(f"{1},{landmarks_data}\n")  # Write the data with the key pressed at the beginning of the line
-            print(f"Data saved for key '{1}'")
+            file.write(f"{0},{landmarks_data}\n")  # Write the data with the key pressed at the beginning of the line
+            print(f"Data saved for key '{0}'")
 
     cv2.imshow("Image", img)
     key = cv2.waitKey(1)

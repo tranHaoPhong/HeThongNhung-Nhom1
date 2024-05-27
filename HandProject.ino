@@ -55,7 +55,7 @@ void handlePostData() {
     }
 
     String body = server.arg("plain");
-    Serial.println("Received POST data: " + body);
+    Serial.println("A.I model: " + body);
 
     DynamicJsonDocument doc(1024);
     DeserializationError error = deserializeJson(doc, body);
